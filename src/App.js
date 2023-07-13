@@ -47,7 +47,7 @@ const Box = ({ children, handlePlay, index, winner }) => {
       whileHover={{ scale: 1.05 }}
       onClick={() => handleClick()}
       className={`
-   h-[120px] font-comico flex items-center justify-center cursor-pointer  ${shadowColor} rounded-md font-bold text-6xl text-white ${symbolColor}`}
+   h-[90px] font-comico flex items-center justify-center cursor-pointer  ${shadowColor} rounded-md font-bold text-6xl text-white ${symbolColor}`}
     >
       {children}
     </motion.div>
@@ -163,7 +163,7 @@ function App() {
         </motion.button>
       </motion.div>
 
-      <div className="w-[450px] mx-auto my-4">
+      <div className="w-[350px] mx-auto my-4">
         <div className="grid grid-cols-3 gap-4 bg-none">{myBoxes}</div>
       </div>
       {winner ? <Modal winner={winner} reset={reset} /> : null}
