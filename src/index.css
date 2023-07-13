@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* SHADOW DE LAS CASILLAS NATURAL */
+.boxes-shadow {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+/* SHADOW DE LAS CASILLAS CUANDO ESTÁN EN X */
+.boxes-shadow-x {
+  box-shadow: 0 0 10px rgba(255, 0, 204, 0.8), 0 0 20px rgba(255, 0, 204, 0.6),
+    0 0 30px rgba(255, 0, 204, 0.4), 0 0 40px rgba(255, 0, 204, 0.2);
+}
+
+/* SHADOW DE LAS CILLAS CUANDO ESTAN EN O */
+.boxes-shadow-o {
+  box-shadow: 0 0 10px rgba(13, 0, 255, 0.8), 0 0 20px rgba(13, 0, 255, 0.6),
+    0 0 30px rgba(13, 0, 255, 0.4), 0 0 40px rgba(13, 0, 255, 0.2);
+}
+
+/* SIMBOLO X */
+.neon-gradient {
+  background: linear-gradient(to right, #ff00cc, #721b74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 0, 204, 0.8), 0 0 20px rgba(255, 0, 204, 0.6),
+    0 0 30px rgba(255, 0, 204, 0.4), 0 0 40px rgba(255, 0, 204, 0.2);
+}
+
+/* SIMBOLO O */
+.neon-gradient-o {
+  background: linear-gradient(to right, #001eff, #47bcd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(13, 0, 255, 0.8), 0 0 20px rgba(13, 0, 255, 0.6),
+    0 0 30px rgba(13, 0, 255, 0.4), 0 0 40px rgba(13, 0, 255, 0.2);
+}
+
+/* MODAL */
+.bg-modal {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4)
+  );
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: "Array";
+  src: url("../public/fonts/Array-Bold.otf");
+}
+
+@font-face {
+  font-family: "Comico";
+  src: url("../public/fonts/Comico-Regular.otf");
+}
